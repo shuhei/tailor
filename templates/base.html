@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <style>
+      #main {
+        background-color: #cc0;
+      }
+      #sub {
+        background-color: #c0c;
+      }
+      #footer {
+        background-color: #0cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Main</h1>
+      <slot></slot>
+    </div>
+    <div id="sub">
+      <h1>Sub</h1>
+      <slot name="sub"></slot>
+    </div>
+    <div id="footer">
+      <h1>Footer</h1>
+      <slot name="footer"></slot>
+    </div>
+  </body>
+</html>
